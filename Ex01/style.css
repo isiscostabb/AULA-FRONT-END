@@ -1,0 +1,146 @@
+
+/* CONFG GERAIS */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor0: #FEFADC;
+    --cor1: #F6D4BA;
+    --cor2: #F3B391;
+    --cor3: #4F3130;
+    --cor4: #1b0411;
+
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--cor3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }  
+
+#content{
+    width: 450px;
+    height: 550px;
+    background-color: var(--cor1);
+    position: relative;
+    border-radius: 5px;
+    border: 10px solid #F3B391;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+
+
+/* HEADER */
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: var(--cor2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1{
+    color: var(--cor3);
+    text-align: center;
+    font-size: 24px;
+    font-family: "Teko", sans-serif;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+
+
+/* MENSAGENS */
+
+main{
+    position: relative;
+    padding: 40px 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#atendente{
+    position: relative;
+    color: var(--cor3);
+    font-size: 15px;
+    font-family: "Teko", sans-serif;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.msg{
+    position: relative;
+    background-color: var(--cor3);
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: var(--cor0);
+}
+
+.atendente{
+    border-radius: 0px 7px 7px 7px;
+}
+
+.usuario{
+    border-radius: 7px 0px 7px 7px;
+    align-self: flex-end;
+}
+
+
+
+/* INPUT */
+
+#bottom{
+    width: 100%;
+    height: 50px;
+    background-color: var(--cor2);
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input#txt{
+    background-color: var(--cor0);
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    width: 350px;
+    padding-left: 7px;
+    color: var(--cor3);
+}
+
+input#txt:focus{
+    outline: 1px solid var(--cor3);
+}
+
+#enviar{
+    border-radius: 5px;
+    background-color: var(--cor3);
+    padding: 3px;
+    width: 60px;
+    height: 25px;
+    border: none;
+    color: var(--cor0);
+    cursor: pointer;
+}
+
+#enviar:hover{
+    background-color: #311f1f;
+    transition: .3s;
+    
+}
