@@ -82,6 +82,17 @@ main{
     margin-bottom: 3px;
 }
 
+#voce{
+    position: relative;
+    color: var(--cor3);
+    font-size: 15px;
+    font-family: "Teko", sans-serif;
+    font-weight: 600;
+    margin-bottom: 3px;
+    align-self: flex-end;
+}
+
+
 .msg{
     position: relative;
     background-color: var(--cor3);
@@ -142,5 +153,4 @@ input#txt:focus{
 #enviar:hover{
     background-color: #311f1f;
     transition: .3s;
-    
 }
