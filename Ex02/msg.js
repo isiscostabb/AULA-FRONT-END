@@ -26,9 +26,11 @@ enviar.addEventListener("click", function() {
     //limpa
     document.getElementById("txt").value = ""
 
+    //scroll
     place.scrollTop = place.scrollHeight;
 });
 
+//enter
 document.getElementById("txt").addEventListener("keypress", (event) => {
     if (event.key === "Enter") { 
         event.preventDefault(); 
